@@ -1,0 +1,135 @@
+html,body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    max-height: 880px;
+    max-width: 1280px;
+    min-height: 600px;
+    min-width: 1000px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+.border{
+    height: 369px;
+    width: 290px;
+    background: transparent;
+    border-radius: 10px;
+    transition: border 1s;
+    position: relative;
+
+}
+.border:hover{
+    border: 1px solid#fff;
+}
+.card{
+    height: 379px;
+    width: 300px;
+    background:#808080;
+    border-radius: 10px;
+    transition: background .8s;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+.card0{
+    background-image: url("people-showing-support-respect-with-yellow-background-suicide-prevention-day\ \(2\).jpg")  ;
+    background-position: center;
+   background-size: 300px;
+   filter: grayscale(100%);
+}
+.card0:hover{
+    background-image: url("people-showing-support-respect-with-yellow-background-suicide-prevention-day\ \(2\).jpg") ;
+    background-position: left;
+
+   background-size: 600px;
+} 
+
+
+
+.card1{
+    background-image: url("beautiful-decorated-bouquet-roses.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   background-size: 300px;
+   filter: grayscale(100%);
+}
+.card1:hover{
+    background-image: url("beautiful-decorated-bouquet-roses.jpg") ;
+    background-position: left;
+
+   background-size: 530px;
+} 
+
+.card2{
+    background-image: url("front-view-man-working-as-nurse.jpg");
+    background-position: center;
+   background-size: 300px;
+   filter: grayscale(100%);
+}
+.card2:hover{
+    background-image: url("front-view-man-working-as-nurse.jpg") ;
+    background-position: left;
+
+   background-size: 600px;
+} 
+.card0:hover h2,
+.card1:hover h2,
+.card2:hover h2{
+    opacity: 1;
+}
+.card0:hover .fa-brands,
+.card1:hover .fa-brands,
+.card2:hover .fa-brands{
+    opacity: 1;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    margin: 20px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.fa-brands{
+    opacity: 0;
+}
+.icon{
+    position: absolute;
+    fill: #fff;
+    color: #fff;
+    height: 130px;
+    top: 226px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.icon a{
+    color: #fff;
+}
+.icon a:hover{
+    color: #9c9c9c;
+}
+
+@media (max-width: 500px){
+    .container{
+        display: inline-block;
+       
+    }
+    .card{
+        margin-bottom: 1rem;
+        margin-left: 3rem;
+    }
+}
+
